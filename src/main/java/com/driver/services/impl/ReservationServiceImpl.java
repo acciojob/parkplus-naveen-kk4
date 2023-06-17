@@ -59,7 +59,7 @@ public class ReservationServiceImpl implements ReservationService {
             }
 
         }
-        if (Objects.isNull(bookedSpot)) throw new Exception("Cannot make reservation");
+        if (minCost==Integer.MAX_VALUE) throw new Exception("Cannot make reservation");
         Reservation reservation = new Reservation();
         reservation.setNumberOfHours(timeInHours);
         reservation.setSpot(bookedSpot);
