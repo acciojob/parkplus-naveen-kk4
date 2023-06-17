@@ -60,7 +60,6 @@ public class ReservationServiceImpl implements ReservationService {
 
         }
         if (Objects.isNull(bookedSpot)) throw new Exception("Cannot make reservation");
-        bookedSpot.setOccupied(Boolean.TRUE);
         Reservation reservation = new Reservation();
         reservation.setNumberOfHours(timeInHours);
         reservation.setSpot(bookedSpot);
