@@ -50,12 +50,12 @@ public class ReservationServiceImpl implements ReservationService {
                     bookedSpot = spot;
                 }
             }
-            if (spot.getSpotType() == SpotType.OTHERS) {
+
+               else {
                 if (spot.getOccupied() == Boolean.FALSE && spot.getPricePerHour() < minCost) {
                     minCost = spot.getPricePerHour();
                     bookedSpot = spot;
                 }
-
             }
 
         }

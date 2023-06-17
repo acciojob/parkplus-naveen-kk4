@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static java.lang.Boolean.FALSE;
+
 @Service
 public class ParkingLotServiceImpl implements ParkingLotService {
     @Autowired

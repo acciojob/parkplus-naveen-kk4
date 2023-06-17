@@ -39,7 +39,7 @@ public class PaymentServiceImpl implements PaymentService {
             }
             else if(i==2){
                 if(ch=='r' || ch=='R')paymentMode=PaymentMode.CARD;
-                if(ch=='s' || ch=='s')paymentMode=PaymentMode.CASH;
+                if(ch=='s' || ch=='S')paymentMode=PaymentMode.CASH;
                 else if(ch=='i' || ch=='I')paymentMode=PaymentMode.UPI;
                 else throw new Exception("Payment mode not detected");
             }
