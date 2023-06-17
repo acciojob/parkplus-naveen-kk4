@@ -32,12 +32,12 @@ public class Payment {
         return id;
     }
 
-    public void setPaymentCompleted(Boolean paymentCompleted) {
-        isPaymentCompleted = paymentCompleted;
+    public Boolean getIsPaymentCompleted() {
+        return isPaymentCompleted;
     }
 
-    public Boolean getPaymentCompleted() {
-        return isPaymentCompleted;
+    public void setIsPaymentCompleted(Boolean paymentCompleted) {
+        isPaymentCompleted = paymentCompleted;
     }
 
     public PaymentMode getPaymentMode() {
