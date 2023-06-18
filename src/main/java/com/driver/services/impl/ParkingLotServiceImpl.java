@@ -49,10 +49,7 @@ public class ParkingLotServiceImpl implements ParkingLotService {
 
     @Override
     public void deleteSpot(int spotId) {
-        Spot spot = spotRepository1.findById(spotId).get();
-        ParkingLot parkingLot = spot.getParkingLot();
-        parkingLot.getSpotList().remove(spot);
-        parkingLotRepository1.save(parkingLot);
+        spotRepository1.deleteById(spotId);
 
     }
 
